@@ -1,0 +1,41 @@
+Ciclo for
+
+Es un ciclo que se repite la veces que queremos, puede ser 1, 2, 3, 4, 100, 1000, o más veces, en ocasiones puede ser muy grande, otro detalle es que puede iniciar en 0 (cero) y empezar a crecer o empezar en el último número y decrecer de el último número a cero, el ciclo for tiene 4 partes: inicio, comparación, incremento/decremento y cuerpo
+
+1. Inicio- En esta parte se una una variable, una variable es un valor que cambia muy seguido, casi siempre empieza en 0 o en 1 y siempre es entera, acaba con punto y coma la instrucción:
+a) for(let i = 0;		incremento
+b) for(let i = 100;		decremento
+
+2. Comparación- Aquí es donde el ciclo sabe hasta donde va a contar, aquí no importa si va de 0 a 100 o de 100 a cero, sabe donde terminará, para esto se hace una comparación, sí la comparación es verdadera avanza a la siguiente instrucción, sí es falsa termina e ciclo
+a) for(let i = 0; i <  100;		incremento
+b) for(let i = 100;	 i > 0;		decremento
+
+3. Incremento/Decremento- En este punta ya sabemos si la variable va a incrementar o va a en decremento, por lo regular va de 1 en uno, a veces es necesario tener incrementos o decremetos de 2 en 2 o más, eso dependerá de lo que se pida
+
+a) for(let i = 0; i <  100; i++)		incremento
+b) for(let i = 100;	 i > 0; i---)		decremento
+
+4. Cuerpo- Aquí van las operaciones que se van a hacer con el ciclo, para finalizar este ejemplo en una variable llamada suma se sumaran todos los valores del ciclo que van desde 0 hasta 100 y de 100 a 0, esta variable será un acumulador porque va acumulando la el resultado de la operación anterior y le va sumando el nuevo, este ejemplo va a ser con JavaScript
+
+//incremento
+function sumaIncremento(){
+let suma = 0;
+
+for(let i = 0; i < 100; i++){
+suma  = suma + i;
+}
+console.log(suma);
+}
+
+//decremento
+function sumaDecremento(){
+let suma = 0;
+
+for(let i = 100; i > 0; i--){
+suma  = suma + i;
+}
+console.log(suma);
+}
+
+sumaIncremento();
+sumaDecremento();
